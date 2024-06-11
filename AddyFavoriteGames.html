@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-----Header and Opacity Behaviour----->
+    <style>
+        #header{
+            padding: 20px 20px;
+            background-image: url(image/Header.png);
+            opacity: 60%;  
+            color: #ffffff;
+            background-size: cover;
+            background-position: 100px;
+            position: fixed;
+            height: 25%;
+            width: 100%;
+            z-index: 100; 
+        }
+        #header:hover {
+            opacity: 1;
+            background-image: url(image/Header.png);
+            transition: 1s;
+        }
+    </style>
+    <!-----Setup of The HTML----->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addy's Favorite Games by Addy</title>
+    <link rel="stylesheet" href="Codes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <!-----Header----->
+    <section id="header" class="header">
+        <nav>
+            <a href="AddyFavoriteGames.html"></a>
+            <div class="nav-btns" id="navBtns">
+                <ul>
+                    <!-----Header Buttons with their Hyper Scroll----->
+                    <li><a href="#title" onclick="myFunctionHome()">HOME</a></li>
+                    <li><a href="#profile" onclick="myFunctionProfile()">PROFILE</a></li>
+                    <li><a href="#skills" onclick="myFunctionSkills()">SKILLS</a></li>
+                    <li><a href="#content" onclick="myFunctionContent()">CONTENT</a></li>
+                    <li><a href="#message" onclick="myFunctionMessage()">MESSAGE</a></li>
+                </ul>
+            </div>
+        </nav>
+    <!-----Color Changing Functions (JavaScript)----->  
+    <script>
+        function myFunctionHome(){
+            document.getElementById("header").style.backgroundImage = "url(image/Header2.png)";   
+        }
+        function myFunctionProfile(){
+            document.getElementById("header").style.backgroundImage = "url(image/Header3.png)";   
+        }
+        function myFunctionSkills(){
+            document.getElementById("header").style.backgroundImage = "url(image/Header4.png)";   
+        }
+        function myFunctionContent(){
+            document.getElementById("header").style.backgroundImage = "url(image/Header5.png)";   
+        }
+        function myFunctionMessage(){
+            document.getElementById("header").style.backgroundImage = "url(image/Header6.png)";   
+        }
+    </script>
+
+    </section>
+    <!-----Title----->
+    <section id="title" class="title">
+        <div class="text-box">
+            <h1 class="hero-btn">Addy's Portfolio</h1>
+            <p>This site is a compilation and information aboout my works, skills, and anything about me</p>
+        </div>
+    </section>
+    <!-----Profile----->
+    <section id="profile" class="profile">
+        <h1>Who Am I?</h1>
+        <img src="image/ProfileKirby.png">
+        <div class="profile-col">
+            <div>
+                <p> I am Adrianne R. Bagadiong, Addy for short, I am a Computer Engineering Student from Colegio De Muntinlupa. My interest is mostly video game in which has open me up to the world of technology. This has guide me to choose this path in which
+                    I have gathered many skills including, but not limited to, Circuit Design, Computer Networking, and Programming.</p>
+            </div>
+        </div>
+    </section>
+    <!-----Skills----->
+    <section id="skills" class="skills">
+        <h1 class="hero-btn1">My Skills</h1>
+        <!-----Row Setup for Skill Section----->
+        <div class="row1">
+            <!-----Colum Setup for Skills [Start]----->
+            <div class="skills-col">
+                <div>
+                    <h3>Computer<br>Servicing</h3>
+                    <img src="image/Skill1.png">
+                    <p>I have a capable knowledge of working and fixing computer/computer networks for connectivity, file management systems, internet connectivity, etc. Such skills were learned through my NCII certification, Computer System Servicing, and various on-field applications.</p>
+                </div>
+            </div>
+            <div class="skills-col">
+                <div>
+                    <h3>Programming/<br>PCB Design</h3>
+                    <img src="image/Skill2.png">
+                    <p>Has knowledge on designing and creating printed circuit boards in which he/she applies in creation of various electronic/computer systems. This skill/knowledge can be applied to fixing or designing systems which can be used for the purpose of automation, replacement, and innovation.</p>
+                </div>
+            </div>
+            <div class="skills-col">
+                <div>
+                    <h3>Network<br>Design</h3>
+                    <img src="image/Skill3.png">
+                    <p>Can create and design computer networks that provide connectivity throughout various computers/devices in a specified location. Such skills were applied in the creation of various network systems for multiple different locations. An example of such is the created proposal for the Alabang Central Market, various offices, etc.</p>
+                </div>
+            </div>
+            <!-----Colum Setup for Skills [End]----->
+        </div>
+    </section>
+    <!-----Transition1----->
+    <section id="content" class="transition1">
+
+    </section>
+    <!-----Content----->
+    <section class="content">
+        <h1 class="hero-btn2">My Content</h1>
+        <div>
+            <p>In this section, it is a compilation of my fellow interns and I’s experience through our on-the-job training. This serves as a record of memories and experience in which the user and other viewers can view and explore to see our first week in an actual working environment. This will only include the first week 😊 due to various reasoning and other excuses that does not justify any aftermath of such output. </p>
+        </div>
+    </section>
+    <!-----Week1Intro----->
+    <section class="Week1Intro">
+        <h1 class="hero-btn1">Week #1</h1>
+    </section>
+    <!-----Week1Content----->
+    <section class="Week1Content">
+        <!-----Row1 Setup for WeekContent Section----->
+        <div class="rowcont">
+            <!-----Column Setup for Row1----->
+            <div class="WeekContent-col">
+                <a><img src="image/Day1.jpg"></a>
+            </div>
+            <div class="WeekContent-col">
+                <h1>Day#1</h1>
+                <p>We have been tasked to create ID for our fellow interns. This include picture editing and decoding the id itself.</p>
+            </div>
+        </div>
+        <!-----Row2 Setup for WeekContent Section----->
+        <div class="rowcont">
+            <!-----Column Setup for Row2----->
+            <div class="WeekContent-col">
+                <h1>Day#2</h1>
+                <p>Today, we are tasked to follow a video about the creation of a website using HTML and CSS. Also, first team meeting., P.S. we cleaned computers</p>
+            </div>
+            <div class="WeekContent-col">
+                <img src="image/Day2.jpg">
+            </div>
+        </div>
+        <!-----Row3 Setup for WeekContent Section----->
+        <div class="rowcont">
+            <!-----Column Setup for Row3----->
+            <div class="WeekContent-col">
+                <img src="image/Day3.jpg">
+            </div>
+            <div class="WeekContent-col">
+                <h1>Day#3</h1>
+                <p>We have finished the assigned task website given to us and started to create our own personalized design. We also got our ID :0</p>
+            </div>
+        </div>
+        <!-----Row4 Setup for WeekContent Section----->
+        <div class="rowcont">
+            <!-----Column Setup for Row4----->
+            <div class="WeekContent-col">
+                <h1>Day#4</h1>
+                <p>In this day, we continued working on our own personal websites. The student has finished about 2/5 of the design and has selected a theme for his assignment.</p>
+            </div>
+            <div class="WeekContent-col">
+                <img src="image/Day4.jpg">
+            </div>
+        </div>
+        <!-----Row5 Setup for WeekContent Section----->
+        <div class="rowcont">
+            <!-----Column Setup for Row5----->
+            <div class="WeekContent-col">
+                <img src="image/Day5.gif">
+            </div>
+            <div class="WeekContent-col">
+                <h1>Day#5</h1>
+                <p>Our schedule was on half-day due to school reasons. We have arrived and started working in the afternoon in which I have finished about a the general idea of my site.</p>
+            </div>
+        </div>
+    </section>
+    <!-----Transition2----->
+    <section class="Transition2">
+        <h1>⋆｡°✩END OF CONTENT ✩°｡⋆</h1>
+    </section>
+    <!-----Message Header----->
+    <section class="MessageTransition">
+        <div>
+        </div>
+    </section>
+    <!-----Message Content----->
+    <section id="message" class="MessageContent">
+        <h1>Made By Adrianne R. Bagadiong<br>[BS-CpE Student 3rd Year] @ 2024</h1>
+        <!-----Row Setup for Message Footer Section----->
+        <div class="rowcont2">
+            <!-----Column Setup for Message Footer [Start]----->
+            <div class="MessageContent-col">
+                <!-----HyperLink for Youtube----->
+                <a href="https://www.youtube.com/channel/UCLEZkwUAijCM7VvjbRcnHBA" target="_blank"><img src="image/Youtube.gif"></a>
+            </div>
+            <div class="MessageContent-col">
+                <p>YOUTUBE</p>
+            </div>
+            <div class="MessageContent-col">
+                <!-----HyperLink for Gmail----->
+                <a href="mailto:bagadiongadrianner@gmail.com" target="_blank"><img src="image/Gmail.gif"></a>
+            </div>
+            <div class="MessageContent-col">
+                <p>GMAIL</p>
+            </div>
+            <div class="MessageContent-col">
+                <!-----HyperLink for Phone----->
+                <a href="tel:+639207221405"><img src="image/Phone.gif"></a>
+            </div>
+            <div class="MessageContent-col">
+                <p>CONTACT</p>
+            </div>
+            <div class="MessageContent-col">
+                <!-----HyperLink for LinkedIn----->
+                <a href="https://www.linkedin.com/in/adrianne-bagadiong-953b26312/" target="_blank"><img src="image/Linked.gif"></a>
+            </div>
+            <div class="MessageContent-col">
+                <p>LINKEDIN</p>
+            </div>
+            <!-----Column Setup for Message Footer [End]----->
+        </div>
+    </section>
+
+</body>
+</html>
