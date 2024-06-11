@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-----Header and Opacity Behaviour----->
     <style>
-        #header{
+        #header {
             padding: 20px 20px;
             background-image: url(image/Header.png);
-            opacity: 60%;  
+            opacity: 60%;
             color: #ffffff;
-            background-size: cover;
+            background-size: contain;
             background-position: 100px;
             position: fixed;
             height: 25%;
             width: 100%;
-            z-index: 100; 
+            z-index: 100;
         }
+        
         #header:hover {
             opacity: 1;
             background-image: url(image/Header.png);
@@ -28,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-    </head>
+</head>
 
 <body>
     <!-----Header----->
@@ -46,24 +48,28 @@
                 </ul>
             </div>
         </nav>
-    <!-----Color Changing Functions (JavaScript)----->  
-    <script>
-        function myFunctionHome(){
-            document.getElementById("header").style.backgroundImage = "url(image/Header2.png)";   
-        }
-        function myFunctionProfile(){
-            document.getElementById("header").style.backgroundImage = "url(image/Header3.png)";   
-        }
-        function myFunctionSkills(){
-            document.getElementById("header").style.backgroundImage = "url(image/Header4.png)";   
-        }
-        function myFunctionContent(){
-            document.getElementById("header").style.backgroundImage = "url(image/Header5.png)";   
-        }
-        function myFunctionMessage(){
-            document.getElementById("header").style.backgroundImage = "url(image/Header6.png)";   
-        }
-    </script>
+        <!-----Color Changing Functions (JavaScript)----->
+        <script>
+            function myFunctionHome() {
+                document.getElementById("header").style.backgroundImage = "url(image/Header2.png)";
+            }
+
+            function myFunctionProfile() {
+                document.getElementById("header").style.backgroundImage = "url(image/Header3.png)";
+            }
+
+            function myFunctionSkills() {
+                document.getElementById("header").style.backgroundImage = "url(image/Header4.png)";
+            }
+
+            function myFunctionContent() {
+                document.getElementById("header").style.backgroundImage = "url(image/Header5.png)";
+            }
+
+            function myFunctionMessage() {
+                document.getElementById("header").style.backgroundImage = "url(image/Header6.png)";
+            }
+        </script>
 
     </section>
     <!-----Title----->
@@ -76,7 +82,7 @@
     <!-----Profile----->
     <section id="profile" class="profile">
         <h1>Who Am I?</h1>
-        <img src="image/ProfileKirby.png">
+        <img src="image/ProfileKirby.png" onmouseover="this.src='image/Profile.png'" onmouseout="this.src='image/ProfileKirby.png'">
         <div class="profile-col">
             <div>
                 <p> I am Adrianne R. Bagadiong, Addy for short, I am a Computer Engineering Student from Colegio De Muntinlupa. My interest is mostly video game in which has open me up to the world of technology. This has guide me to choose this path in which
@@ -94,21 +100,24 @@
                 <div>
                     <h3>Computer<br>Servicing</h3>
                     <img src="image/Skill1.png">
-                    <p>I have a capable knowledge of working and fixing computer/computer networks for connectivity, file management systems, internet connectivity, etc. Such skills were learned through my NCII certification, Computer System Servicing, and various on-field applications.</p>
+                    <p>I have a capable knowledge of working and fixing computer/computer networks for connectivity, file management systems, internet connectivity, etc. Such skills were learned through my NCII certification, Computer System Servicing, and
+                        various on-field applications.</p>
                 </div>
             </div>
             <div class="skills-col">
                 <div>
                     <h3>Programming/<br>PCB Design</h3>
                     <img src="image/Skill2.png">
-                    <p>Has knowledge on designing and creating printed circuit boards in which he/she applies in creation of various electronic/computer systems. This skill/knowledge can be applied to fixing or designing systems which can be used for the purpose of automation, replacement, and innovation.</p>
+                    <p>Has knowledge on designing and creating printed circuit boards in which he/she applies in creation of various electronic/computer systems. This skill/knowledge can be applied to fixing or designing systems which can be used for the
+                        purpose of automation, replacement, and innovation.</p>
                 </div>
             </div>
             <div class="skills-col">
                 <div>
                     <h3>Network<br>Design</h3>
                     <img src="image/Skill3.png">
-                    <p>Can create and design computer networks that provide connectivity throughout various computers/devices in a specified location. Such skills were applied in the creation of various network systems for multiple different locations. An example of such is the created proposal for the Alabang Central Market, various offices, etc.</p>
+                    <p>Can create and design computer networks that provide connectivity throughout various computers/devices in a specified location. Such skills were applied in the creation of various network systems for multiple different locations. An
+                        example of such is the created proposal for the Alabang Central Market, various offices, etc.</p>
                 </div>
             </div>
             <!-----Colum Setup for Skills [End]----->
@@ -122,7 +131,8 @@
     <section class="content">
         <h1 class="hero-btn2">My Content</h1>
         <div>
-            <p>In this section, it is a compilation of my fellow interns and I’s experience through our on-the-job training. This serves as a record of memories and experience in which the user and other viewers can view and explore to see our first week in an actual working environment. This will only include the first week 😊 due to various reasoning and other excuses that does not justify any aftermath of such output. </p>
+            <p>In this section, it is a compilation of my fellow interns and I’s experience through our on-the-job training. This serves as a record of memories and experience in which the user and other viewers can view and explore to see our first week
+                in an actual working environment. This will only include the first week 😊 due to various reasoning and other excuses that does not justify any aftermath of such output. </p>
         </div>
     </section>
     <!-----Week1Intro----->
@@ -235,4 +245,5 @@
     </section>
 
 </body>
+
 </html>
